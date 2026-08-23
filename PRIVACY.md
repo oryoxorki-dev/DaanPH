@@ -4,90 +4,124 @@
 
 DaanPH is an offline-first public transportation and commuter navigation application developed by **Angeles Micky**.
 
-This Privacy Policy explains how DaanPH handles information when you use the application.
+This Privacy Policy explains how DaanPH handles user information.
 
-## 1. Information We Collect
+## 1. No Personal Data Collection
 
-DaanPH is designed to operate primarily offline.
+DaanPH does **not collect, transmit, sell, or share personal information**.
 
-The application does not require users to create an account or provide personal information such as their name, email address, phone number, or password.
+The application does not require users to create an account or provide:
 
-DaanPH does not intentionally collect or transmit personal information to a remote server through its core offline functionality.
+* Name
+* Email address
+* Phone number
+* Password
+* User profile
+* Payment information
 
-## 2. Location Information
+DaanPH does not operate a user account system or backend service for collecting personal information.
 
-DaanPH may use the device's location functionality when the user chooses to use location-based features.
+## 2. Offline-Only Operation
 
-Location information is used to provide relevant navigation functionality, such as determining the user's position or helping identify nearby transportation options.
+DaanPH is designed to operate offline.
 
-DaanPH's core offline functionality does not require location information to be uploaded to a remote server.
+Core application functionality, including:
 
-## 3. Search and Destination Information
+* Place search
+* Transportation search
+* Route search
+* Offline maps
+* Fare estimation
+* Saved places
+* Recent searches
 
-Places, destinations, and transportation searches may be processed locally on the device as part of DaanPH's offline search and routing functionality.
+is processed locally on the user's device.
 
-DaanPH does not intentionally transmit these searches to a remote server through its core offline functionality.
+DaanPH does not send these searches or route requests to a remote server.
 
-## 4. Data Stored on Your Device
+## 3. Location Information
 
-DaanPH may store certain application data locally on your device to provide features such as:
+DaanPH may use the device's location when the user enables location-based functionality.
+
+Location information is processed locally on the device to support navigation-related features.
+
+DaanPH does not upload or transmit the user's location to a backend server.
+
+## 4. Information Stored on the Device
+
+DaanPH may store information locally on the user's device to provide application functionality, including:
 
 * Saved places
 * Recent searches
-* Application settings
+* Application preferences
 * Offline transportation data
 * Offline geographic data
 * Offline map data
 
-This information remains stored locally on the device unless the operating system or the user removes the application data.
+This information is stored locally and is not transmitted to DaanPH servers.
 
-## 5. Third-Party Services
+Removing the application or clearing its application data may remove locally stored application information.
 
-DaanPH is designed to minimize dependence on remote services for its core functionality.
+## 5. Analytics, Advertising, and Tracking
 
-The application may use third-party technologies or data sources, including:
+DaanPH does not use:
 
+* Advertising networks
+* Analytics services
+* User tracking services
+* Third-party behavioral tracking
+* Personalized advertising
+
+The application does not intentionally track users across applications or websites.
+
+## 6. Third-Party Services
+
+DaanPH does not depend on a remote backend or online API for its core functionality.
+
+The application may contain or use open-source software libraries and publicly available datasets, including technologies such as:
+
+* Flutter
+* SQLite
 * OpenStreetMap data
-* Flutter and related libraries
-* Android platform services
+* Other open-source libraries used within the application
 
-Third-party services may have their own privacy policies and terms of use.
+These technologies are used to provide application functionality and do not change DaanPH's offline-first data practices.
 
-## 6. Transportation and Map Data
+## 7. Transportation and Map Data
 
-DaanPH uses geographic and transportation datasets to provide offline navigation functionality.
+DaanPH contains transportation and geographic datasets used to provide offline navigation.
 
-Transportation information, route information, map data, and fare estimates may be incomplete, outdated, or subject to change.
+Transportation routes, stops, fares, maps, and other information may change over time and may not always reflect current real-world conditions.
 
-Users should verify important transportation information with official sources or transportation operators when necessary.
+Users should verify important transportation information with official transportation authorities or operators when necessary.
 
-## 7. Children's Privacy
+## 8. Children's Privacy
 
-DaanPH does not intentionally collect personal information from users.
+DaanPH does not intentionally collect personal information from users, including children.
 
-Because the application does not require an account or submission of personal information for its core functionality, no personal information is intentionally collected from children through the application.
+No account or personal information is required to use the application's core functionality.
 
-## 8. Data Security
+## 9. Data Security
 
-DaanPH is designed with an offline-first architecture, which limits the amount of user information that needs to be transmitted to remote services.
-
-However, no software or device can be guaranteed to be completely secure.
+Because DaanPH does not operate a backend for collecting user information, core user searches and application data remain on the user's device.
 
 Users are responsible for maintaining the security of their device and operating system.
 
-## 9. Changes to This Privacy Policy
+## 10. Changes to This Privacy Policy
 
-This Privacy Policy may be updated when DaanPH's functionality, data practices, or third-party services change.
+This Privacy Policy may be updated if DaanPH's functionality or data practices change.
 
-Updates will be reflected in this document, including the date of the latest revision.
+Any updates will be reflected in this document along with a new "Last updated" date.
 
-## 10. Contact
+## 11. Contact
 
-For questions or concerns regarding this Privacy Policy or DaanPH, please contact:
+For questions regarding DaanPH or this Privacy Policy:
 
 **Angeles Micky**
 
-GitHub: [DaanPH Repository](https://github.com/oryoxorki-dev/daanph)
+DaanPH Developer
+
+GitHub: `https://github.com/oryoxorki-dev/daanph`
 
 ---
 
