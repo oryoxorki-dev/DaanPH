@@ -202,6 +202,13 @@ The latest Android APK is available in the project's **GitHub Releases**.
 
 ---
 
+## Developer
+
+**Angeles Micky**
+
+Independent developer and creator of DaanPH, an offline-first public transportation and commuter navigation application for the Philippines.
+
+---
 ## License
 
 See the repository license for information regarding the use, modification, and distribution of this project.
