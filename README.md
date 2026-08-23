@@ -4,7 +4,7 @@
 
 **DaanPH** is an offline-first commuter navigation application designed to help Filipinos discover and navigate public transportation routes across the Philippines, even without an internet connection.
 
-DaanPH stores essential transportation, geographic, and map data locally on the device, allowing core search and routing functionality to operate offline.
+The application stores essential transportation, geographic, and map data locally on the device, allowing core search and routing functionality to operate offline.
 
 > DaanPH — Find your way, even offline.
 
@@ -12,11 +12,11 @@ DaanPH stores essential transportation, geographic, and map data locally on the 
 
 ## Overview
 
-Navigating public transportation in the Philippines can be difficult, especially when traveling through unfamiliar areas or when internet connectivity is limited.
+Navigating public transportation in the Philippines can be challenging, particularly when traveling through unfamiliar areas or when internet connectivity is limited.
 
-DaanPH aims to simplify this process by providing a centralized offline commuter tool for finding routes, transportation stops, destinations, and estimated fares.
+DaanPH brings route search, transportation stops, place search, offline maps, and fare estimation together into a single commuter-focused application.
 
-The application is designed specifically around the structure and challenges of Philippine public transportation.
+The project is designed specifically around the structure and practical challenges of Philippine public transportation.
 
 ---
 
@@ -24,21 +24,23 @@ The application is designed specifically around the structure and challenges of 
 
 ### Offline Maps
 
-DaanPH supports locally stored map data so users can access essential map information without continuously relying on an internet connection.
+Locally stored map data allows users to access essential map information without continuously depending on an internet connection.
 
 ### Public Transportation Routing
 
 DaanPH searches available transportation data to determine possible routes between an origin and destination.
 
-The routing system can account for multiple transportation services and transfers.
+The routing system can account for multiple transportation services and transfers when determining possible journeys.
 
 ### Fare Estimation
 
-DaanPH provides estimated fares for supported transportation routes based on Philippine public transportation fare data.
+DaanPH provides estimated fares for supported transportation routes based on available Philippine public transportation fare data.
+
+Fare information should be treated as an estimate and may change as transportation fares and policies are updated.
 
 ### Offline Place Search
 
-Users can search for destinations, landmarks, transportation stops, and other locations using locally stored data.
+Users can search for destinations, landmarks, transportation stops, and other locations using locally stored geographic data.
 
 ### Origin and Destination Search
 
@@ -46,7 +48,7 @@ Users can select an origin and destination and receive possible commuting routes
 
 ### Offline-First Architecture
 
-Core functionality is designed to operate locally rather than requiring every request to be sent to a remote backend.
+Core functionality is designed to operate locally rather than requiring every operation to depend on a remote backend.
 
 Essential transportation and geographic data can be bundled directly with the application.
 
@@ -54,7 +56,7 @@ Essential transportation and geographic data can be bundled directly with the ap
 
 ## How It Works
 
-The general routing process works as follows:
+A typical route search follows this process:
 
 ```text
 User
@@ -84,26 +86,35 @@ Route Instructions
 Offline Map Visualization
 ```
 
-DaanPH performs route discovery using locally available transportation data, allowing core functionality to remain available without an active internet connection.
+Route discovery is performed using locally available transportation and geographic data, allowing core routing functionality to remain available without an active internet connection.
 
 ---
 
 ## Technology
 
-DaanPH is built using:
+DaanPH is built using the following technologies:
+
+### Mobile Application
 
 * Flutter
 * Dart
 * Flutter Map
 * latlong2
+
+### Local Data and Search
+
 * SQLite
 * sqflite
 * FTS5 Full-Text Search
+
+### Geographic and Transportation Data
+
 * OpenStreetMap data
 * Offline map tiles
 * Philippine transportation datasets
+* Geographic and place data
 
-The application uses a locally bundled SQLite database for essential transportation and geographic data.
+The application uses a locally bundled SQLite database to store essential transportation and geographic information required for offline functionality.
 
 ---
 
@@ -111,7 +122,7 @@ The application uses a locally bundled SQLite database for essential transportat
 
 DaanPH uses processed transportation and geographic datasets to provide offline commuter functionality.
 
-The data can include information relating to:
+Depending on the datasets currently included in the application, the data can contain information relating to:
 
 * Jeepneys
 * Buses
@@ -123,7 +134,7 @@ The data can include information relating to:
 * Landmarks
 * Transportation terminals
 
-Transportation coverage depends on the datasets currently included in the application and is continuously being expanded and improved.
+Transportation coverage is continuously being expanded and improved as additional datasets become available.
 
 ---
 
@@ -134,11 +145,14 @@ Many navigation applications depend heavily on:
 * Internet connectivity
 * Remote APIs
 * Online map services
+* Cloud-based routing
 * Real-time backend services
 
 DaanPH takes an offline-first approach for its core functionality.
 
-By keeping important transportation and geographic data locally available, DaanPH can continue providing essential commuter functionality in situations where connectivity is limited or unavailable.
+By keeping important transportation and geographic data locally available, the application can continue providing essential commuter functionality in situations where connectivity is limited or unavailable.
+
+This approach also reduces the application's dependence on remote services for everyday route searches.
 
 ---
 
@@ -148,7 +162,7 @@ DaanPH is built specifically with Philippine commuters in mind.
 
 The project focuses on making public transportation information easier to search, understand, and navigate.
 
-The long-term goal is to expand transportation coverage and improve route accuracy across more areas of the Philippines.
+The long-term goal is to expand transportation coverage, improve route accuracy, and support more areas across the Philippines.
 
 ---
 
@@ -159,11 +173,11 @@ DaanPH is tested using different Philippine locations and transportation scenari
 Example journeys include:
 
 ```text
-Monumento -> Intramuros
-Malabon -> Caloocan
-Quezon City -> Makati
-Manila -> Pasay
-Caloocan -> Quezon City
+Monumento → Intramuros
+Malabon → Caloocan
+Quezon City → Makati
+Manila → Pasay
+Caloocan → Quezon City
 ```
 
 Testing focuses on:
@@ -184,7 +198,7 @@ Testing focuses on:
 
 **Active Development**
 
-DaanPH is an actively developed application. Transportation coverage, routing capabilities, datasets, and application features may continue to change as the project evolves.
+DaanPH is actively developed and tested. Transportation coverage, routing capabilities, datasets, and application features may continue to change as the project evolves.
 
 ---
 
@@ -192,13 +206,26 @@ DaanPH is an actively developed application. Transportation coverage, routing ca
 
 DaanPH is an independent software project built in the Philippines with the goal of making public transportation easier to understand and navigate.
 
-The project combines mobile development, geographic data, transportation data, offline databases, and route-search algorithms into a single commuter-focused application.
+The application combines:
+
+* Mobile application development
+* Geographic data
+* Public transportation data
+* Offline databases
+* Full-text search
+* Route-search algorithms
+* Fare estimation
+* Offline map technology
+
+into a single commuter-focused application.
 
 ---
 
 ## Download
 
-The latest Android APK is available in the project's **GitHub Releases**.
+The latest Android APK is available through **GitHub Releases**.
+
+For the latest version, visit the repository's **Releases** section.
 
 ---
 
@@ -206,13 +233,10 @@ The latest Android APK is available in the project's **GitHub Releases**.
 
 **Angeles Micky**
 
-Independent developer and creator of DaanPH, focused on building practical software solutions for Philippine commuters through offline-first mobile technology
+Independent developer and creator of DaanPH, focused on building practical software solutions for Philippine commuters through offline-first mobile technology.
 
 ---
+
 ## License
 
 See the repository license for information regarding the use, modification, and distribution of this project.
-
----
-
-**DaanPH — Offline public transportation navigation for the Philippines.**
