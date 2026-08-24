@@ -30,7 +30,7 @@ Locally stored map data allows users to access essential map information without
 
 DaanPH searches available transportation data to determine possible routes between an origin and destination.
 
-The routing system can account for multiple transportation services and transfers when determining possible journeys.
+The routing system works with locally stored routes, trips, stops, and stop relationships and can explore available transit journeys and transfers when constructing possible routes.
 
 ### Fare Estimation
 
@@ -65,25 +65,25 @@ User
 Search Origin and Destination
  |
  v
-Local Place Search
+Offline Place Search
  |
  v
-Find Nearby Transportation Stops
+Find Nearby Transit Stops
  |
  v
-Route Search Engine
+Offline Transit Route Search
  |
  v
-Transfer and Path Exploration
+Explore Available Trips and Transfers
  |
  v
-Fare Calculation
+Calculate Route Segments and Fare Estimates
  |
  v
-Route Instructions
+Generate Route Instructions
  |
  v
-Offline Map Visualization
+Display Route on Offline Map
 ```
 
 Route discovery is performed using locally available transportation and geographic data, allowing core routing functionality to remain available without an active internet connection.
@@ -106,6 +106,15 @@ DaanPH is built using the following technologies:
 * SQLite
 * sqflite
 * FTS5 Full-Text Search
+
+### Routing and Data Architecture
+
+* Custom offline transit route-search logic
+* SQLite-based local transit data
+* Local routes, trips, stops, and stop relationships
+* FTS5 for offline place and transportation stop search
+* Preprocessed geographic and transportation datasets
+* Offline map tiles
 
 ### Geographic and Transportation Data
 
@@ -213,7 +222,7 @@ The application combines:
 * Public transportation data
 * Offline databases
 * Full-text search
-* Route-search algorithms
+* Custom route-search logic
 * Fare estimation
 * Offline map technology
 
